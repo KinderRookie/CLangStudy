@@ -20,7 +20,7 @@ function(add_study_executables directory)
 endfunction()
 
 # Alternatively, to automatically find all CH* directories:
- file(GLOB STUDY_DIRS "${CMAKE_SOURCE_DIR}/CH*")
+ file(GLOB STUDY_DIRS "${CMAKE_SOURCE_DIR}/src")
  foreach(DIR ${STUDY_DIRS})
      if(IS_DIRECTORY ${DIR})
          add_study_executables(${DIR})
